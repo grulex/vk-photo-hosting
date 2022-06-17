@@ -1,6 +1,11 @@
 # Бесплатный хостинг фотографий VK
 Отлично подходит для хакатонов или пет-проектов.
 
+## Установка
+```shell
+go get github.com/grulex/vk-photo-hosting
+```
+
 ## Начало
 - Регистрируемся на vk.com
 - Создаём новое сообщество [тут](https://vk.com/groups?w=groups_create). 
@@ -10,7 +15,7 @@
 `{Id группы}-{Id Альбома}`
 - Получаем токен пользователя [тут](https://oauth.vk.com/authorize?client_id=6287487&scope=262148&redirect_uri=https://oauth.vk.com/blank.html&display=page&response_type=token&revoke=1). После предоставления доступа копируем из URL значение`access_token`
 
-Таким образом, мы получили всё необходимое для работы с библиотекой: userToken, groupId, albumId 
+Таким образом, мы получили всё необходимое для работы с библиотекой: userToken, groupId, albumId
 
 ## Использование
 ### Создание объекта хостинга
